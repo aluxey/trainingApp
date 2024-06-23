@@ -11,15 +11,15 @@ function Navbar() {
   return (
     <div className='Navbar'>
       <ul className='listNavbar'>
-        <li className='titleNav'><a><Link to="/">TrainingApp</Link></a></li>
-        <li><a href="#home"><Link to="/movie">MovieSearch</Link></a></li>
-        <li><a href="#home"><Link to="/anime">Anime</Link></a></li> 
+        <li className='titleNav'><Link to="/">TrainingApp</Link></li>
+        <li><Link to="/movie">MovieSearch</Link></li>
+        <li><Link to="/anime">Anime</Link></li> 
         <li className="dropdown"> 
-            {currentUser ? (
-              <Link to="/test"><img className="dropbtn" src={currentUser.photoURL} alt="User Avatar" /></Link>
-            ) : (
-              <img className="dropbtn" src={avatar} alt="Default Avatar" />
-            )} 
+          {currentUser ? (
+            <Link to="/test"><img className="dropbtn" src={currentUser.photoURL} alt="User Avatar" /></Link>
+          ) : (
+            <img className="dropbtn" src={avatar} alt="Default Avatar" />
+          )} 
         </li>
       </ul> 
     </div>

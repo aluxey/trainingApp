@@ -91,7 +91,7 @@ const MovieSearch = () => {
 
   useEffect(() => {
     fetchWatchLater();
-  }, [currentUser]);
+  }, [currentUser, fetchWatchLater]);
 
   return (
     <div>
