@@ -1,0 +1,55 @@
+.Navbar {
+    background-color: #333;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+}
+
+.listNavbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.listNavbar li {
+    float: left;
+}
+
+.listNavbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.listNavbar li a:hover {
+    background-color: #575757;
+}
+
+.titleNav {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.titleNav a {
+    color: #ffeb3b;
+    /* Yellow color for the title */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+}
+
