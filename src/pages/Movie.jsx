@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { db } from '../firebase/firebase';
 import { collection, addDoc, getDocs, query, where, deleteDoc, doc } from 'firebase/firestore';
 import { useAuth } from '../firebase/AuthContext';
@@ -14,9 +14,9 @@ const MovieSearch = () => {
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
     setLoading(true);
-    console.log(apiKey,'TESTTTT')
+    console.log(apiKey, 'TESTTTT');
 
     try {
       const response = await fetch(`http://www.omdbapi.com/?t=${encodeURIComponent(searchTerm)}&apikey=${apiKey}`);
@@ -70,7 +70,7 @@ const MovieSearch = () => {
     }
   };
 
-  const fetchWatchLater = async () => {
+  const fetchWatchLater = useCallback(async () => {
     if (currentUser) {
       setLoading(true);
       try {
@@ -87,7 +87,7 @@ const MovieSearch = () => {
         setLoading(false);
       }
     }
-  };
+  }, [currentUser]);
 
   useEffect(() => {
     fetchWatchLater();
