@@ -135,7 +135,7 @@ const MovieSearch = () => {
                   <img src={movie.poster} alt={movie.title} className='lilicon' />
                 </div>
                 <div className='rightSide'>
-                  <h3>{movie.title}</h3>
+                  <h2>{movie.title}</h2>
                   <p>{movie.year}</p>
                   <p>{movie.director}</p>
                   <p>{movie.plot}</p>

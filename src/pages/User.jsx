@@ -25,22 +25,18 @@ function User() {
   }
 
   return (
-    <div>
-        <div className='card'>
-            <div className='leftSide'>
-                <img src={currentUser.photoURL} alt="User Avatar" />
-            </div>
-            <div className='rightSide'>
-                <h2>User Profile</h2>
-                <p><strong>Name:</strong> {currentUser.displayName}</p>
-                <p><strong>Email:</strong> {currentUser.email}</p>
-                <p><strong>UID:</strong> {currentUser.uid}</p>
-                <button onClick={logout}>Logout</button>
-            </div>  
-        </div>
-        
-    </div>
-    
+      <div className='card'>
+          <div className='leftSide'>
+              <img src={currentUser.photoURL} alt="User Avatar" />
+          </div>
+          <div className='rightSide'>
+              <h2>User Profile</h2>
+              <p><strong>Name:</strong> {currentUser.displayName}</p>
+              <p><strong>Email:</strong> {currentUser.email}</p>
+              <p><strong>UID:</strong> {currentUser.uid}</p>
+              <button onClick={logout}>Logout</button>
+          </div>  
+      </div>
   );
 }
 

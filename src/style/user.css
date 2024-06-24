@@ -1,55 +1,32 @@
-/* src/style/user.css */
-
-.card {
+.card{
     display: flex;
     flex-direction: row;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    transition: transform 0.3s ease;
-    margin: 1vw;
+    width: 40vw;
+    min-width: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
 }
 
-.card:hover {
-    transform: scale(1.02);
+.leftSide{
+    padding: 2vw;
+    width: 40%;
 }
 
-.leftSide {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px; 
-    border-radius: 90%;
-}
-
-.leftSide img {
+.leftSide img{
     object-fit: cover;
-    border-radius: 5px;
+    width: 100%;
 }
 
-.rightSide {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.rightSide{
+    padding: 2vw;
+    width: 60%;
 }
 
-.rightSide h2 {
-    margin-bottom: 10px;
-    color: #333;
-    font-size: 24px;
+.rightSide h2{
+    margin-top: 0;
+    text-align: center;
+    color: black;
 }
 
-.rightSide p {
-    margin: 5px 0;
-    color: #555;
-    font-size: 16px;
-}
-
-.rightSide p strong {
-    color: #333;
-}
